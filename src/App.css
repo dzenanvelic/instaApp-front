@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+.brand-logo {
+  font-family: "Grand Hotel", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #222 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myCard {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 40px;
+}
+.authCard {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+.input-field input:focus {
+  border-bottom: 1px solid rgb(77, 144, 243) !important;
+  box-shadow: 0 1px 0 0 rgb(77, 144, 243) !important;
+}
+h2 {
+  font-family: "Grand Hotel", cursive;
+}
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 30px;
+}
+.profilePicWrapper {
+  display: flex;
+}
+.followDiv {
+  display: flex;
+}
+.followDiv h6 {
+  margin-right: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.gallery img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.cardContainer {
+  display: flex;
+}
+.cardHome {
+  min-width: 100%;
+  align-self: center;
+  justify-self: center;
+
+  margin: 25px auto;
+}
+.heart {
+  color: red;
+}
+.createPost {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.createPost > input {
+  margin-bottom: 20px !important;
+}
+.createPost > h5 {
+  text-align: center;
+}
+#toast-container {
+}
+.likesPost {
+  display: flex;
+  align-items: center;
+}
+.commentInput {
+  display: flex;
+  align-items: center;
+}
+.commentsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.sendComment {
+  color: blue;
+  font-size: 30px;
+  background-color: rgb(214, 214, 212);
+  border-radius: 40%;
+  cursor: pointer;
+}
+.postedByComment {
+  font-weight: bold;
+  padding-right: 10px;
+}
+.deleteComment {
+  color: crimson;
+  font-size: 10px;
+  align-self: right;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.postedComment {
+  background-color: rgb(235, 222, 222);
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.deletePostIcon {
+  color: rgb(248, 136, 136);
+  font-size: 20px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.followButtons {
+  margin-top: 10px;
+}
+.followButtons > .btn {
+  margin-right: 10px;
+}
+.heart {
+  cursor: pointer;
+}
+.uploadPic {
+  display: flex;
+  margin-top: 20px;
+}
+.uploadPic > span {
+  color: rgb(81, 81, 211);
+  cursor: pointer;
+}
+.searchBar {
+  color: #222;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.modalSearch {
+  color: black;
+}
+.rightOn {
+  float: right;
+}
+
+.cardUser {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: lightblue;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.cardUserImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userContainer {
+  padding-top: 40px;
+}
+.home {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.userPost {
+  min-width: 300px;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 960px) {
+  .userContainer {
+    display: none;
   }
 }
